@@ -30,3 +30,4 @@ print(type(zbior))
 
 slownik = {'nigger': 'wyśmiewisko, kierowane do ludności czarnoskórej'}
 print(type(slownik))
+
