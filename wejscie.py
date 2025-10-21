@@ -13,5 +13,5 @@ print(type(liczba))
 liczba_z_przecinkiem = float(input('Podaj liczbę z przecinkiem'))
 print(type(liczba_z_przecinkiem))
 
-cos = list(inout('podaj coś: '))
+cos = list(input('podaj coś: '))
 print(cos)
