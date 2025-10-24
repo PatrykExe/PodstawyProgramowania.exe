@@ -12,9 +12,9 @@ elif not(test_kompetencji_jezykowych > 90 or ocena_ze_swiadectwa >= 5):
 
 #ZADANIE 14:
 from math import sqrt
-a = float(input('Podaj liczbę rzeczywistą, która nie jest równa 0'))
-b = float(input('Podaj następną liczbę rzeczywistą'))
-c = float(input('Podaj następną liczbę c'))
+a = float(input('Podaj liczbę rzeczywistą, która nie jest równa 0: '))
+b = float(input('Podaj następną liczbę rzeczywistą: '))
+c = float(input('Podaj następną liczbę rzeczywistą: '))
 
 d = b ** 2 - 4 * a * c
 # d == delta (mój skrót myślowy)
