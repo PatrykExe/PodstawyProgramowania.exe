@@ -5,16 +5,16 @@ ocena_ze_swiadectwa = int(input('Podaj swoją ocenę ze świadectwa: '))
 
 if test_kompetencji_jezykowych > 90 or ocena_ze_swiadectwa >= 5:
     print('Dostałeś się do grupy zaawansowanej.')
-else:
+elif not(test_kompetencji_jezykowych > 90 or ocena_ze_swiadectwa >= 5):
     print('Dostałeś się do grupy podstawowej')
 
 
 
 #ZADANIE 14:
 from math import sqrt
-a = float(input('Podaj liczbę a, która nie jest równa 0'))
-b = float(input('Podaj liczbę b'))
-c = float(input('Podaj liczbę c'))
+a = float(input('Podaj liczbę rzeczywistą, która nie jest równa 0'))
+b = float(input('Podaj następną liczbę rzeczywistą'))
+c = float(input('Podaj następną liczbę c'))
 
 d = b ** 2 - 4 * a * c
 # d == delta (mój skrót myślowy)
