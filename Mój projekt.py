@@ -1,7 +1,7 @@
 import random
 
 nagroda = ['10zł', '20zł', '15 zł', '25zł', '30zł', '50zł' 'monster ultra white', 'monster ultra paradise']
-kara = ['2zł', '3zł', '5zł', '10zł' 'cały maraton sprintem (udokumentowane)']
+kara = ['2zł', '3zł', '5zł', '10zł', 'cały maraton sprintem (udokumentowane)']
 
 while True:  # Jest to pętla, która będzie aktywna do momentu zgadnięcia liczby przez użytkownika
     a = int(input('Podaj liczbę od 1 do 9: '))
