@@ -33,4 +33,4 @@ while True:  # Jest to pętla, która będzie aktywna do momentu zgadnięcia lic
             print(f'Liczbą była cyfra {b}')
 
     else:
-        print('Nie rozumiesz? Odpowiedz "tak" lub "nie".')
+        print('Po Polskiemu nie rozumiesz? Odpowiedzi są dwie: "tak" lub "nie".')
