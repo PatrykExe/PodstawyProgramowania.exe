@@ -39,7 +39,7 @@ while True:  # Jest to pętla, która będzie aktywna do momentu zgadnięcia lic
 
 if otrzymane_kary:
     print("\n Twoje kary: ")
-    for idx, k in enumerate():
+    for idx, k in enumerate(otrzymane_kary, 1):
         print(f"{idx}. {k}")  #idx = index; k = poszczególna kara
         print(f"No cóż, otrzymałeś razem {otrzymane_kary} kar(y)")
 else:
