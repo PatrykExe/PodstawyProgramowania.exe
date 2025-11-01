@@ -1,6 +1,6 @@
 import random
 
-nagroda = ['10zł', '20zł', '15 zł', '25zł', '30zł', '50zł' 'monster ultra white', 'monster ultra paradise']
+nagroda = ['10zł', '20zł', '15 zł', '25zł', '30zł', '50zł' 'monster ultra white', 'monster ultra Ruby red']
 kara = ['2zł', '3zł', '5zł', '10zł', 'cały maraton sprintem (udokumentowane)']
 
 otrzymane_kary = []  #Lista od otrzymanych kar, które potem zostaną wyświetlone (skrypt od 40 linijki)
@@ -39,8 +39,6 @@ while True:  # Jest to pętla, która będzie aktywna do momentu zgadnięcia lic
 
 if otrzymane_kary:
     print("\n Twoje kary: ")
-    for idx, k in enumerate(otrzymane_kary, 1):
-        print(f"{idx}. {k}")  #idx = index; k = poszczególna kara
-        print(f"No cóż, otrzymałeś razem {otrzymane_kary} kar(y)")
-else:
-    print("\nSzacun, pierwsza próba!!")
+    for idx, k in enumerate(otrzymane_kary + 1):
+         print(f"{idx}. {k}")  #idx = index; k = poszczególna kara
+         print(f"No cóż, otrzymałeś razem {otrzymane_kary} kar(y)")
