@@ -69,8 +69,51 @@ lista_napisow2 = ['Windows', 'XP', 'został', 'stworzony', 'z', 'pasją']
 cale_zdanie2 = '\n'.join(lista_napisow2) #\n odpowiada za przeniesienie kolejnych elementów do innych następnych linijek
 print(cale_zdanie2)
 
-#3) zliczanie danego znaku w tekscie
+#4) zliczanie danego znaku w tekscie
 
 napis5 = 'prawdopodobieństwo'
 ile_razy_o = napis5.count('o') #count() odpowiada za zliczenie elementów słowa lub listy, które zostały wybrane (np. a lub 12)
 print(ile_razy_o)
+
+#5 'Mutowalność' stringów
+napis6 = 'fiwyka'
+# napis6[2] = 'z'
+# print(napis6)
+#Nie da się 'podmieniać' pojedyńczych znaków w stringach
+
+#Sposób na to coś
+napis6_lista = list(napis6)
+print(napis6_lista)
+napis6_lista[2] = 'z'
+print(napis6_lista)
+napis6_gotowy = ''.join(napis6_lista)
+print(napis6_gotowy)
+
+#6) Długość napisu
+napis7 = 'językpolski'
+print(len(napis7))
+
+#7) Powielanie stringa
+napis8 = 'google maps'
+print(napis8 * 3)
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+# Funkcje testujące cyfry i litery
+napis9 = 'kobalt20'
+if napis9.isalpha() == True:
+    print('Słowo składa się tylko z liter')
+else:
+    print('Słowo nie składa się tylko z liter')
+
+napis10 = '1410'
+if napis10.isdigit() = True:
+    print('same cyfry')
+else:
+    print('nie same cyfry')
+
+napis11 = '1410w'
+if napis11.isalnum() = True:
+    print('cyfry i litery')
+else:
+    print('nie cyfry i litery')
