@@ -107,13 +107,13 @@ else:
     print('Słowo nie składa się tylko z liter')
 
 napis10 = '1410'
-if napis10.isdigit() == True:
+if napis10.isdigit() = True:
     print('same cyfry')
 else:
     print('nie same cyfry')
 
 napis11 = '1410w'
-if napis11.isalnum() == True:
+if napis11.isalnum() = True:
     print('cyfry i litery')
 else:
     print('nie cyfry i litery')
