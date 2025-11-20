@@ -1,7 +1,7 @@
 import random
 
-nagroda = [10, 20, 15, 25, 30, 50]
-kara = [2, 3, 5, 10]
+nagroda = [20, 25, 30, 50]
+kara = [2, 3, 5]
 
 saldo = 0
 
@@ -39,7 +39,7 @@ while True:
             if random.random() < 0.5: #50% szans
                 wygrana = random.choice(nagroda)
                 saldo = saldo + wygrana
-                print(f"Brawo! Wygrałeś {wygrana} zł!")
+                print(f"Wygrałeś {wygrana} zł!")
             break
 
         else:
