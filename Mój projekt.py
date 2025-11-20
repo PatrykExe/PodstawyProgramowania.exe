@@ -14,22 +14,20 @@ while True:
     if decyzja == "tak":
 
         if a == b:
-            # wygrana
-            if random.random() < 0.5:
+            if random.random() < 0.5: #50% szans
                 wygrana = random.choice(nagroda)
-                saldo += wygrana
+                saldo = saldo + wygrana
                 print(f"Brawo! Wygrałeś {wygrana} zł!")
             break
 
         else:
-            # przegrana
             wylosowana_kara = random.choice(kara)
-            saldo -= wylosowana_kara
+            saldo = saldo - wylosowana_kara
 
             if b == a + 1 or b == a - 1:
                 print(f"Blisko! Ale nie trafiłeś. Kara: {wylosowana_kara} zł")
             else:
-                print(f"nie tym razem! Twoja kara to {wylosowana_kara} zł")
+                print(f"Przegrałeś: -{wylosowana_kara} zł")
 
             print(f"Prawidłowa liczba to {b}")
             continue
@@ -38,15 +36,15 @@ while True:
         a = int(input("Podaj nową liczbę (ostatnia szansa!): "))
 
         if a == b:
-            if random.random() < 0.5:
+            if random.random() < 0.5: #50% szans
                 wygrana = random.choice(nagroda)
-                saldo += wygrana
+                saldo = saldo + wygrana
                 print(f"Brawo! Wygrałeś {wygrana} zł!")
             break
 
         else:
             wylosowana_kara = random.choice(kara)
-            saldo -= wylosowana_kara
+            saldo = saldo - wylosowana_kara
 
             if b == a + 1 or b == a - 1:
                 print(f"Blisko! Ale nie trafiłeś. Kara: {wylosowana_kara} zł")
