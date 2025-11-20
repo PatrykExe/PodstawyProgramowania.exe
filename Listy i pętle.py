@@ -68,5 +68,11 @@ print(lista67)
 #     print('cześć')
 #     lista.append(0)
 
-while True:
-    print('x')
+liczba69 = int(input('podaj liczbę 3: '))
+
+while liczba69 < 1000001:
+    print(liczba69)
+    liczba69 = liczba69 + 1
+
+if liczba69 == 1000001:
+    print('1000000: Dożyłeś')
