@@ -9,7 +9,8 @@ print("ryzyko niskie: Kwota wejściowa: 5zł")
 print("ryzyko średnie: Kwota wejściowa: 10zł")
 print("ryzyko wysokie: Kwota wejściowa: 15zł")
 
-ryzyko = input('Podaj poziom trudości (niskie, średnie, wysokie):')
+liczba_rund = int(input("Liczba rund: "))
+ryzyko = input('Podaj poziom ryzyka (niskie, średnie, wysokie): ')
 Wstep = input('Jeżeli wchodzisz, wpisz "tak", a jeżeli nie, wpisz "nie": ')
 
 if ryzyko == "niskie":
@@ -153,7 +154,7 @@ elif ryzyko == "wysokie":
                     if random.random() < 0.5: #50% szans
                         wygrana = random.choice(nagroda)
                         saldo = saldo + wygrana
-                        print(f"Brawo, zgadłeś za pierwszym razem! Wygrałeś {wygrana} zł!")
+                        print(f"Brawo! Wygrałeś {wygrana} zł!")
                     break
 
                 else:
@@ -175,7 +176,7 @@ elif ryzyko == "wysokie":
                     if random.random() < 0.5: #50% szans
                         wygrana = random.choice(nagroda)
                         saldo = saldo + wygrana
-                        print(f"Brawo, zgadłeś za pierwszym razem! Wygrałeś {wygrana} zł!")
+                        print(f"Brawo! Wygrałeś {wygrana} zł!")
                     break
 
                 else:
@@ -196,6 +197,15 @@ elif ryzyko == "wysokie":
 
 else:
     print('Odpowiedzi są tylko dwie: "tak" lub "nie".')
+
+for r in range(1, liczba_rund + 1):
+    if saldo <= 0:
+        print("\nSaldo wynosi 0 — koniec gry!")
+        break
+
+    print(f"\n===== RUNDA {r} =====")
+    ryzyko = input("Wybierz poziom ryzyka (niskie/średnie/wysokie): ").lower()
+
 
 print("\n       PODSUMOWANIE")
 if saldo > 0:
