@@ -1,4 +1,4 @@
-# #Pętla while - przykłady
+"""# #Pętla while - przykłady
 #
 # liczba = 120
 # licznik = 0
@@ -32,4 +32,79 @@ while haslo != popr_haslo and proba < 5:
     if haslo == popr_haslo:
         print('Welcome')
     else:
-        print('Nima hasla - nima wstepu')
+        print('Nima hasla - nima wstepu')"""
+"""import time
+from random import randint
+x = 0
+punkty1 = 0
+punkty2 = 0
+
+while not ((punkty1 >= 21 or punkty2 >= 21) and abs(punkty1 - punkty2 >= 2)):  #abs(x) = |x|
+    x += 1
+    print(f'Wynik: {punkty1} : {punkty2}')
+    print(f'Akcja {x}:')
+    #runda = int(input("Podaj która drużyna wygrała (1/2): "))
+    runda = randint(1,2)
+    if runda == 1:
+        punkty1 += 1
+    elif runda == 2:
+        punkty2 += 1
+    time.sleep(10)
+
+if punkty1 > punkty2:
+    print("Wygrała drużyna 1")
+
+elif punkty1 < punkty2:
+    print('Wygrała drużyna ')
+"""
+
+liczba = int(input('Podaj liczbę: '))
+
+while liczba > 0:
+    cyfra = liczba % 10
+    liczba = liczba // 10
+    print(cyfra, end = '')
+# 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67
+
+
+liczba2 = int(input('Podja liczbe: '))
+d = 2
+ile_czyn = 0
+ile_r_czyn = 0
+while liczba2 > 1:
+    if liczba2 % d == 0:
+        ile_r_czyn += 1
+    while liczba2 % d == 0:
+        liczba2 = liczba2 // d
+        ile_czyn += 1
+    d += 1
+print(ile_czyn)
+print(ile_r_czyn)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
