@@ -32,4 +32,27 @@ print(lista8)
 # "mnożenie" listy przez liczbę
 lista9 = [0] * 2137
 
+print(lista9)
+
+#5 Sortowanie i odwracanie listy
+lista10 = [4 ,2, 5, 72, 41, 212, 67, 23]
+#lista10.sort()
+lista10.reverse()
 print(lista10)
+
+#6) wyrażenia listowe
+lista11 = list(range(1, 11))
+lista11_kwadraty = [x ** 2 for x in lista11 if x % 2 == 0]
+print(lista11_kwadraty)
+
+#7) usuwanie elementów
+#7.1)usuwanie elementu na bazie jego wartości
+lista12 = [4, 67, 8, 44, 67, 18]
+#lista12.remove(67) #usuwa pierwszy element od lewej
+while 67 in lista12:
+    lista12.remove(67)
+print(lista12)
+
+#7.2 usuwanie elementu na bazie jego indexu
+del lista12[1]
+print(lista12)
