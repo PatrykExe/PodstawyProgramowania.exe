@@ -36,4 +36,13 @@ del lista1[4:9]
 print(lista1)
 
 #i)
-''''''
+
+#j)
+'''lista3 = [x ** 2for x in lista1]'''
+
+lista3 = []
+for x in lista1:
+    lista3.append(x ** 2)
+print(lista3)
+
+#2
