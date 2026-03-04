@@ -38,3 +38,18 @@ def jaki_trojkat(a, b, c):
 
 
 jaki_trojkat(7, 10, 16)
+
+
+#Zadanie 2.3
+def liczby_niezalezne(lista):
+    wynik = []
+    for f in lista:
+        dzielniki = []
+        for u in lista:
+            if f % u == 0:
+                dzielniki.append(u)
+        if len(dzielniki) == 1:
+            wynik.append(f)
+    return wynik
+print(liczby_niezalezne([12, 7, 3, 6, 21, 74]))
+#2(4, 5, 6, 7, 8)
