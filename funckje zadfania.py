@@ -55,3 +55,14 @@ print(liczby_niezalezne([12, 7, 3, 6, 21, 74]))
 
 
 #2(4, 5, 6, 7, 8)
+
+
+def ileLiter(tekst):
+    slownik = dict()
+    zbior = set(tekst)
+    for x in zbior:
+        ile = tekst.count(x)
+        slownik[x] = ile
+    return slownik
+
+print(ileLiter('babcia'))
