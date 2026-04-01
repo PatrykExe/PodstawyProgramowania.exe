@@ -38,3 +38,27 @@ for x in dane:
 
 for g in galerie:
     print(g.kraj, g.miasto, g.lokale_handlowe)
+
+print(' ')
+galerie_sort_miasta = list(sorted(galerie, key = lambda x: x.miasto))
+
+for g in galerie_sort_miasta:
+    print(g.kraj, g.miasto, g.lokale_handlowe)
+
+print(' ')
+print(' ')
+galerie_sort2 = list(sorted(galerie, key = lambda x: x.lokale_handlowe[0][0] * x.lokale_handlowe[0][1]))
+
+for g in galerie_sort2:
+    print(g.kraj, g.miasto, g.lokale_handlowe)
+
+def powierzchnia(galeria):
+    lista_lokali = galeria.lokale_handlowe
+    suma = 0
+    for p in lista_lokali:
+        pole = p[0] * p[1]
+        suma += pole
+    return suma
+
+
+galerie_sort2 = list(sorted(galerie, key = lambda x: ))
