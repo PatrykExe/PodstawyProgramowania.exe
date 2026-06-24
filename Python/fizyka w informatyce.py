@@ -9,7 +9,7 @@ while t <= 10:
     chwila += 1
 
 
-plik = open('sprawdzian/sily.txt')
+plik = open('../sprawdzian/sily.txt')
 dane = plik.readlines()
 
 for i in range(len(dane)):
