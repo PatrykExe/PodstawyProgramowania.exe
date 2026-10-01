@@ -1,0 +1,33 @@
+Zadanie 1
+
+Specyfikacja:
+
+Dane:
+n - liczba całkowita
+
+Wynik:
+suma - liczba całkowita
+
+Algorytm:
+oblicz(n)
+    suma <- 0
+    licznik <- 0
+    dla i = 1, 2, ..., n
+        jeżeli i mod 2 = 0 oraz i mod 3 =!= 0
+            suma <- suma + i
+            licznik <- licznik + 1
+        w przeciwnym razie jeśli i mod 5 = 0 lub i = 7
+            suma <- suma - i
+    dopóki suma > 100
+        suma <- suma div 2
+    jeżeli licznik =!= 0
+        suma <- suma + n * n
+    zwróć suma
+
+Zadanie 2
+
+
+
+
+
+
