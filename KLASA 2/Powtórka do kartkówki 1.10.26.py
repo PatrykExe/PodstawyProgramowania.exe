@@ -9,4 +9,13 @@ for k in range(1, n + 1):
         print(k, i, s, p)
 
 #Zadanie 3
+#Zadanie 2
 
+T = [-1, 27, 6, 13, 4, -3, -2, -3]
+n = len(T) - 1
+x = 30
+
+def d(x):
+    global n
+    n = n + 1
+    T.append(x)
