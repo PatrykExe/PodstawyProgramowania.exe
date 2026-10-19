@@ -1,0 +1,28 @@
+Twierdzenie
+jeżeli liczby a i b są podzielne przez liczbę d, to:
+
+1) d | (a - b)
+2) d | (a + b)
+
+Dowód)  a = d * k
+        b = d * l
+
+         1)  a - b = d * k - d * l = d(k - l) => d | (a - b)
+
+         2)  a + b = d * k + d * l = d(k + l) => d | (a + b)
+
+POSZUKIWANIE NWD(a, b)
+
+    a > b
+        NWD(a, b)  =  NWD(a - b, b)
+        * skoro d | a  i  d | b  to  d | (a - b)
+          więc skoro NWD(a, b) = d to również NWD(a - b, b) = d
+
+Przykład:
+a = 72      b = 120
+NWD(a, b) = 24
+NWD(72, 120)
+NWD(72, 48)
+NWD(24, 48)
+NWD(24, 24)
+NWD(0, 24) = 24
