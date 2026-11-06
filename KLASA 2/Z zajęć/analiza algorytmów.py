@@ -30,17 +30,17 @@ print(ile_p, ile_k)
 #ZAD. 2.2
 T = [x for x in range(1, 101)]
 x = 101
-n = len(T) - 1
+n0 = len(T) - 1
 
-ile_w = 0
+ileW = 0
 
 F(T, x)
 
 #ZAD. 3
 
-n = 10
-P = [0] * (n + 1)
-S = [0] * (n + 1)
+N = 10
+P = [0] * (N + 1)
+S = [0] * (N + 1)
 
 for i in range(1, n + 1):
     P[i] = 1
