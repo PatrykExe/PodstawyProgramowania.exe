@@ -19,10 +19,30 @@ for x in range(2):
     player3.append(cards.pop())
     player4.append(cards.pop())
 
+# Karty na stół
 def deal_community_cards(table, cards, amount):
     for i in range(amount):
         table.append(cards.pop())
 
-deal_community_cards(table, cards, 3)  # Flop
-deal_community_cards(table, cards, 1)  # Turn
-deal_community_cards(table, cards, 1)  # River
+# Opcje ruchu
+def check:
+def call:
+def bet:
+def fold:
+# FLOP
+deal_community_cards(table, cards, 3)
+print(f'FLOP: {table}')
+
+#Pierwsze decyzje
+
+#TURN
+deal_community_cards(table, cards, 1)
+print(f'TURN: {table}')
+
+#drugie decyzje
+
+#RIVER
+deal_community_cards(table, cards, 1)
+print(f'RIVER: {table}')
+
+#ostatnie decyzje
